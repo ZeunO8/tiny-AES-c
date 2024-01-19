@@ -2,7 +2,7 @@ cmake_minimum_required(VERSION 3.12)
 
 project(tiny-aes C)
 
-add_library(${PROJECT_NAME} "")
+add_library(${PROJECT_NAME} SHARED "")
 target_sources(${PROJECT_NAME}
     PRIVATE
         ${CMAKE_CURRENT_LIST_DIR}/aes.c
